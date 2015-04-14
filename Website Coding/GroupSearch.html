@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+#header {
+    background-color:Navy;
+    color:Gold;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;          
+}
+#section {
+    width:350px;
+    float:left;
+    color:navy;
+    padding:10px;
+   
+   
+     
+}
+#footer {
+    background-color:navy;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:1px;      
+}
+</style>
+</head>
+
+<body>
+
+<div id="header">
+<h1>Study Buddy</h1>
+</div>
+
+<div id="nav">
+<a href="http://localhost/OssWebApp/Homepage.html">Home</a><br>
+<a href="http://localhost/OssWebApp/Signup.html">Sign In</a><br>
+<a href="http://localhost/OssWebApp/Webappinfo.html">WebApp Info</a><br>
+</div>
+
+<div id="section">
+<h1> Group Search </h1> 
+<form action="mypage.php?searching=true" method="POST">
+Search Departments<br>
+<input type="text" name="searchcategory" value=""/>
+<input type="submit" value="Search"/>
+</form>
+<form action="mypage.php?searching=true" method="POST">
+Search Subject<br>
+<input type="text" name="searchcategory" value=""/>
+<input type="submit" value="Search"/>
+</form>
+<form action="mypage.php?searching=true" method="POST">
+Search Course Number<br>
+<input type="text" name="searchcategory" value=""/>
+<input type="submit" value="Search"/>
+</form>
+
+
+
+</div>
+
+
+<div id="footer">
+Created by Sean Clark
+</div>
+
+</body>
+</html>
