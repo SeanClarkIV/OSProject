@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Homepage</title>
+
+<style type="text/css" media="all">
+@import "images/style.css";
+</style>
+
+
+
+</head>
+<body>
+
+
+<div class="content">
+
+
+
+  <div id="submenu">
+     
+  <form name="cse" id="searchbox_demo" action="https://www.google.com/cse">
+  <input type="hidden" name="cref" value="" />
+  <input type="hidden" name="ie" value="utf-8" />
+  <input type="hidden" name="hl" value="" />
+  <input name="q" type="text" size="40" />
+  <input type="submit" name="sa" value="Search" />
+</form>
+<script type="text/javascript" src="https%3A%2F%2Fcse.google.com%2Fcse/tools/onthefly?form=searchbox_demo&lang="></script>
+                                
+    
+    <a href="http://tcnj.edu/">TCNJ Homepage</a>
+    </div>
+    
+    
+    
+    
+  <div class="bridge">
+    <div class="title"><h1>Study Buddy</h1><br></div>
+    
+  </div>
+  <div class="nav">
+    <ul>
+      <li><a href="index.html">Home</a> | </li>
+      <li><a href="login.php">Login</a> | </li>
+      <li><a href="register.php">Register</a> | </li>
+    </ul>
+  </div>
+ 
+  <div class="center">
+    <h1> Web Application Info </h1> 
+<p>
+The Study Buddy Application give students the 
+capability to open on campus study groups for their 
+department, major, and/or class. Users are able to organize
+ study groups for specific educational topics. Users also have 
+ the option of creating or searching for study groups and tutor 
+ sessions on campus. They are also able to provide location, size of group, 
+ intensity of studies, and other related tags.
+</p> 
+    <br />
+   
+  </div>
+  <div class="footer">
+    <div class="padding">  Created by Sean Clark </div>
+  </div>
+  
+  
+  
+  
+  
+</div>
+</body>
+</html>
