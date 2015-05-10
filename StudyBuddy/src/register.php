@@ -17,15 +17,11 @@
 
 
 
-  <div id="submenu">
-    <form action="http://google.com/">
-      <div class="searchb"><br/>
-        Search the Web:
-        <input type="text" name="search" class="text" />
-        <input type="submit" value="Go" class="submit" />
-      </div>
-    </form>
-    <a href="http://tcnj.edu/">TCNJ Homepage</a>
+   <div id="submenu">
+    
+      
+   
+    <a href="http://tcnj.edu/"><br>TCNJ Homepage</a>
     </div>
     
     <div class="bridge">
@@ -34,7 +30,7 @@
   </div>
   <div class="nav">
     <ul>
-      <li><a href="index.html">Home</a> | </li>
+      <li><a href="index.php">Home</a> | </li>
       <li><a href="login.php">Login</a> | </li>
       <li><a href="register.php">Register</a> | </li>
       
@@ -72,13 +68,16 @@ if(!empty($_POST['user']) && !empty($_POST['pass'])) {
 
 
 	if($result){
-	echo "Account Successfully Created";
+	header("Location: SuccessReg.php");
+    exit();
 	} else {
-	echo "Failure!";
+	header("Location: unsuccessReg.php");
+    exit();
 	}
 
 	} else {
-	echo "That username already exists! Please try again with another.";
+	header("Location: alreadyexist.php");
+    exit();
 	}
 
 } else {

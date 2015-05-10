@@ -52,7 +52,12 @@ if(!isset($_SESSION["sess_user"])){
 
 <form action="" method="POST">
 Department: <input type="text" name="dept"><br />
-Subject: <input type="text" name="sub"><br />	
+Subject: <input type="text" name="sub"><br />
+Description:<br /> <textarea name="message" rows="10" cols="30">
+About the group...
+</textarea>
+<br><br>
+
 <input type="submit" value="Create Group" name="submit" />
 </form>
 </div>
@@ -60,27 +65,29 @@ Subject: <input type="text" name="sub"><br />
 <?php
 if(isset($_POST["submit"])){
 
-if(!empty($_POST['dept']) && !empty($_POST['sub'])) {
-	$dept=$_POST['dept'];
+if(!empty($_POST['dept']) && !empty($_POST['sub']) && !empty($_POST['message'])) 
+{
+	$dept=$_POST['dept']; 
 	$sub=$_POST['sub'];
+	$message=$_POST['message'];
 
 	$con=mysql_connect('localhost','root','') or die(mysql_error());
 	mysql_select_db('studybuddy_database') or die("cannot select DB");
 
-	$query=mysql_query("SELECT * FROM groups WHERE department='".$dept."'");
+	$query=mysql_query("SELECT * FROM groups WHERE department='".$dept."' AND subject='".$sub."' AND description='".$message."' " );
 	$numrows=mysql_num_rows($query);
 	if($numrows==0)
 	{
-	$sql="INSERT INTO groups(department,subject) VALUES('$dept','$sub')";
+	$sql="INSERT INTO groups(department,subject,description) VALUES('$dept','$sub','$message')";
 
 	$result=mysql_query($sql);
 
 
 	if($result){
-	header("Location: SuccessReg.php");
+	header("Location: SuccGroup.php");
     exit();
 	} else {
-	header("Location: unsuccessReg.php");
+	header("Location: UnsuccGroup.php");
     exit();
 	}
 
@@ -96,16 +103,15 @@ if(!empty($_POST['dept']) && !empty($_POST['sub'])) {
 
 ?>
 
-<div class="center12">
- <br> 
-<br>
-   <h1>Search Groups</h1> 
-	    <p>You  may search either by depatment or subject<p> 
-	    <form  method="post" action="search.php?go"  id="searchform"> 
-	      <input  type="text" name="name"> 
-	      <input  type="submit" name="submit" value="Search"> 
-    </form> 
-</div>
+
+
+
+
+
+
+
+
+
 
 
 

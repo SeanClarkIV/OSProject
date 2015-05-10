@@ -7,7 +7,7 @@ body {
 	color:#FFF;  
 	background-color:#eee;
 	line-height: 1.4em; 
-	background : #3C3C3C url(bg.jpg) repeat-x;
+	background : #5F666C url(bg.jpg) repeat-x;
 }
 
 .topmenu {
@@ -174,11 +174,45 @@ hr { background: #3C3C3C; border: 1px solid #555; margin: 10px 0 10px 0;}
 	font-size: 95%; 
 	margin: 15px 0 5px 5px; 
 	padding: 0; 
-	background: #3C3C3C; 
-	color: #FF0;
+	background-color: transparent; 
+	color: #FFF;
+}
+
+.center1 { 
+	
+	float:left;
+	text-align: left; 
+	width: 700px; 
+	font-size: 95%; 
+	margin: 15px 15px 15px 15px; 
+	padding: 0; 
+	background-color: transparent; 
+	color: #FFF;
+}
+
+.center12 { 
+	
+	float:left;
+	text-align: Left; 
+	width: 700px; 
+	padding: 0; 
+	background-color: transparent; 
+	color: #FFF;
 }
 
 .center a { color: #FF0;}
+
+.title {font-style:italic;}
+
+.bridge { 
+	
+	text-align: center;
+	background-color: #1E1F21;
+}
+
+
+
+
 
 
 .footer { 
@@ -188,7 +222,8 @@ hr { background: #3C3C3C; border: 1px solid #555; margin: 10px 0 10px 0;}
 	width: auto;
 	color:#888;  
 	font-size:90%;
-	background: #3C3C3C;
+	background: transparent;
+	
 	border-top: 1px solid #555; 
 	text-align:center; 
 	margin-top: 30px;
